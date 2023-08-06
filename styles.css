@@ -534,3 +534,64 @@ a {
 }
 
 /* ... (outros estilos) */
+
+/* ... (outros estilos) */
+
+#languages {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.languages-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.language {
+    flex: 0 0 calc(50% - 20px);
+    text-align: center;
+}
+
+.chart {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
+
+.percent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+svg {
+    transform: rotate(-90deg);
+}
+
+.outer {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 10;
+}
+
+.inner {
+    fill: none;
+    stroke: #3498db;
+    stroke-width: 10;
+    stroke-dasharray: 0 100;
+    transition: stroke-dasharray 1s ease-in-out;
+}
+
+.language:hover .inner {
+    stroke-dasharray: var(--percent) 100;
+}
+
+/* ... (outros estilos) */
+

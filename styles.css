@@ -381,7 +381,7 @@ a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s;
     margin: 15px;
-    margin-bottom: -80px; /* Ajuste o valor conforme necessário */
+    margin-bottom: -40px; /* Ajuste o valor conforme necessário */
 }
 
 .project:hover {

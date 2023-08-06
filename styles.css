@@ -317,3 +317,72 @@ a {
 }
 
 /* ... (outros estilos) */
+
+/* ... (outros estilos) */
+
+#education {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.education-item {
+    text-align: left;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.education-item h3 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.education-item p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.education-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.education-header i {
+    font-size: 24px;
+    color: #3498db;
+    transition: transform 0.3s;
+}
+
+.education-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.education-item:hover .education-header i {
+    transform: rotate(180deg);
+}
+
+/* Adicionando a animação Animate.css */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeInUp {
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+/* ... (outros estilos) */

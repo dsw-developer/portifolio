@@ -281,49 +281,7 @@ a {
 
 /* ... (outros estilos) */
 
-/* ... (outros estilos) */
 
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.skill {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.circle {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: #f2f2f2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.bar {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    background-color: #007bff;
-    clip-path: polygon(0 0, 100% 0, 100% 100%);
-    transform-origin: bottom left;
-    transform: rotate(0deg);
-}
-
-.percent {
-    font-size: 20px;
-    font-weight: bold;
-    color: #007bff;
-}
-
-/* ... (outros estilos) */
 
 
 /* ... (outros estilos) */

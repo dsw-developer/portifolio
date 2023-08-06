@@ -44,6 +44,7 @@ nav ul li a {
 .project img {
     max-width: 100%;
     height: auto;
+    
 }
 
 /* Estilos do rodapé */
@@ -212,40 +213,7 @@ header {
     margin-top: 10px;
 }
 
-/* ... (outros estilos) */
 
-.project {
-    text-align: left;
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.project img {
-    max-width:100 %;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.project h3 {
-    font-size: 20px;
-    margin: 5px 0;
-}
-
-.project-description {
-    margin: 5px 0;
-}
-
-
-
-/* ... (outros estilos) */
-
-.more-text {
-    display: none;
-    margin-top: 10px;
-}
 
 /* ... (outros estilos) */
 
@@ -280,8 +248,6 @@ a {
 }
 
 /* ... (outros estilos) */
-
-
 
 
 /* ... (outros estilos) */
@@ -328,8 +294,80 @@ a {
 
 /* ... (outros estilos) */
 
+/* ... (outros estilos) */
 
-    /* ... (outros estilos) */
+.projects-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projects {
+    text-align: center;
+    width: 300px; /* Tamanho dos projetos */
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ... (outros estilos) */
+
+/* ... (outros estilos) */
+
+#right-content {
+    width: 60%; /* Ajuste a largura conforme necessário */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#projects {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.project {
+    display: inline-block;
+    text-align: center;
+    width: 350px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    margin: 15px;
+}
+
+.project:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.project-description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* ... (outros estilos) */
+
+/* ... (outros estilos) */
 
 .project {
     display: inline-block;
@@ -343,7 +381,7 @@ a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s;
     margin: 15px;
-    margin-bottom: 20px; /* Ajuste o valor conforme necessário */
+    margin-bottom: -80px; /* Ajuste o valor conforme necessário */
 }
 
 .project:hover {
@@ -351,3 +389,6 @@ a {
 }
 
 /* ... (outros estilos) */
+
+
+

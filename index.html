@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <title>Portfólio</title>
 </head>
 <body>
@@ -76,6 +78,47 @@ aplicativos da Web. </p>
 </section>
 	
 <!-- ... (outro código HTML) -->
+	<section id="education">
+    <h2>Escolaridade</h2>
+    <div class="education-slider owl-carousel">
+        <div class="education">
+            <div class="education-content">
+                <h3>Universidade Óscar Ribas</h3>
+                <p class="degree">Licenciado em Engenharia da Informação e comunicação</p>
+                <p class="date">2017 - 2022/2023</p>
+            </div>
+        </div>
+        <div class="education">
+            <div class="education-content">
+                <h3>Instituto polivalente Edik ramon colégio pitruca </h3>
+                <p class="degree">Ensino Médio Curso de informática</p>
+                <p class="date">2014 - 2016</p>
+            </div>
+        </div>
+        <!-- Adicione mais experiências educacionais aqui -->
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".education-slider").owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 20,
+            nav: true,
+            dots: false,
+            navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>']
+        });
+    });
+</script>
+
+
+
+
+<!-- ... (resto do código) -->
+
 
 <section id="languages">
     <h2>Competências Linguísticas</h2>

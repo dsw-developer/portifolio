@@ -146,7 +146,36 @@ aplicativos da Web. </p>
     </div>
 </section>
 
-
+<section id="projects">
+    <h2>Projetos</h2>
+    <div class="project-slider owl-carousel">
+        <div class="project">
+            <img src="foto/0101.png" alt="Projeto 1">
+            <h3>Título do Projeto 1</h3>
+            <p class="project-description">Descrição breve do Projeto 1.</p>
+        </div>
+        <div class="project">
+            <img src="foto/of.png" alt="Projeto 2">
+            <h3>Título do Projeto 2</h3>
+            <p class="project-description">Descrição breve do Projeto 2.</p>
+        </div>
+        <!-- Adicione mais projetos aqui -->
+    </div>
+</section>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".project-slider").owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 20,
+            nav: true,
+            dots: false,
+            navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>']
+        });
+    });
+</script>
 
 
     

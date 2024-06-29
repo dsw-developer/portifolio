@@ -6,240 +6,149 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2.2/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
     <title>Portfólio</title>
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f0f2f5;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        .contact-button {
+            margin-right: 0.5rem;
         }
-        header {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .profile-picture img {
-            border-radius: 50%;
-            width: 120px;
-            height: 120px;
-            object-fit: cover;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            margin: 10px 0;
-            font-size: 2em;
-            font-weight: 600;
-        }
-        p {
-            margin: 5px 0;
-        }
-        .contact-icons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 10px;
-        }
-        .contact-icons a {
-            color: #333;
-            font-size: 1.5em;
-            transition: color 0.3s;
-        }
-        .contact-icons a:hover {
-            color: #0077B5;
-        }
-        section {
-            max-width: 800px;
-            width: 100%;
-            margin: 20px 0;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        h2 {
-            margin-bottom: 15px;
-            font-size: 1.5em;
-            border-bottom: 2px solid #0077B5;
-            display: inline-block;
-        }
-        .skills-container, .languages-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .skill, .language {
-            flex: 1 1 calc(50% - 20px);
-            background-color: #f8f9fa;
-            padding: 15px;
-            border-radius: 8px;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .skill i, .language .chart {
-            font-size: 2em;
-            margin-bottom: 10px;
-        }
-        .project, .education {
-            text-align: center;
-        }
-        .project img, .education img {
-            width: 100%;
-            border-radius: 8px;
-        }
-        .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: #0077B5;
-            color: #fff;
-            border: none;
-            padding: 10px;
-            border-radius: 50%;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .owl-carousel .owl-nav button.owl-prev {
-            left: -20px;
-        }
-        .owl-carousel .owl-nav button.owl-next {
-            right: -20px;
-        }
-        .owl-carousel .owl-nav button:hover {
-            background-color: #005fa3;
+        .chart .outer {
+            transition: stroke-dashoffset 1s ease;
         }
     </style>
 </head>
-<body>
-    <header>
-        <div class="profile-picture">
-            <img src="foto/fot.jpg" alt="Sua Foto">
+<body class="bg-gray-100">
+    <header class="bg-white shadow-lg p-6 text-center">
+        <div class="profile-picture mx-auto mb-4">
+            <img src="https://via.placeholder.com/100" width="100" height="100" alt="Sua Foto" class="rounded-full">
         </div>
-        <h1><strong>Arnaldo Barbosa</strong></h1>
-        <p>Developer web || Analista de Dados</p>
-        <p>Luanda, Angola</p>
-        <div class="contact-icons">
-            <a href="mailto:Arnaldobarbosa690@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a href="tel:244937707227"><i class="fas fa-phone"></i></a>
-            <a href="https://github.com/dsw-developer" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/arnaldo-barbosa-3ab517213/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <h1 class="text-3xl font-bold"><strong>Arnaldo Barbosa</strong></h1>
+        <p class="text-lg">Developer web || Analista de Dados</p>
+        <p class="text-gray-600">Luanda, Angola</p>
+        <div class="contact-icons mt-4">
+            <a href="mailto:Arnaldobarbosa690@gmail.com" class="contact-button"><i class="fas fa-envelope text-red-500"></i></a>
+            <a href="tel:244937707227" class="contact-button"><i class="fas fa-phone text-green-500"></i></a>
+            <a href="https://github.com/dsw-developer" target="_blank" class="contact-button"><i class="fab fa-github text-blue-500"></i></a>
+            <a href="https://www.linkedin.com/in/arnaldo-barbosa-3ab517213/" target="_blank" class="contact-button"><i class="fab fa-linkedin text-blue-700"></i></a>
         </div>
     </header>
     
-    <section id="about">
-        <h2>About me</h2>
+    <section id="about" class="container mx-auto py-12 bg-white shadow-lg rounded-lg my-8 p-6">
+        <h2 class="text-2xl font-bold mb-4 border-b-2 border-blue-800 inline-block" data-aos="fade-right">About me</h2>
         <p>Sou um estudante carismático formado em engenharia informática e comunicação, tenho uma ancha experiência em desenvolvimento web e análise de dados, procuro ser eficaz nos meus conhecimentos para obter resultados positivos, visando o desenvolvimento de um trabalho objetivo que gere resultados para permitir a evolução coexistente.</p>
-        <a id="read-more-button" href="about.html">Read more</a>
+        <a id="read-more-button" href="about.html" class="text-blue-800 hover:underline">Read more</a>
     </section>
 
-    <section id="experience">
-        <h2>Experiência Profissional</h2>
-        <div class="experience-item">
-            <div class="experience-title">Gestor de conteúdo web - Fronteend Developer - FDA</div>
-            <div class="experience-date">2019 - 07/2020</div>
-            <div class="experience-description">
+    <section id="experience" class="container mx-auto py-12 bg-white shadow-lg rounded-lg my-8 p-6">
+        <h2 class="text-2xl font-bold mb-4 border-b-2 border-blue-800 inline-block" data-aos="fade-right">Experiência Profissional</h2>
+        <div class="experience-item mb-6">
+            <div class="experience-title text-xl font-semibold">Gestor de conteúdo web - Fronteend Developer - FDA</div>
+            <div class="experience-date text-gray-600">2019 - 07/2020</div>
+            <div class="experience-description mt-2">
                 <p>Na empresa Fronteend Develop Angola - FDA , trabalhei como: refatoração de código, desenvolvimento de websites.</p>
             </div>
         </div>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill">
-                <i class="fas fa-code"></i>
-                <h3>Desenvolvimento Web</h3>
+    <section id="skills" class="container mx-auto py-12 bg-white shadow-lg rounded-lg my-8 p-6">
+        <h2 class="text-2xl font-bold mb-4 border-b-2 border-blue-800 inline-block" data-aos="fade-right">Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="skill bg-white p-6 shadow-lg rounded-lg text-center" data-aos="zoom-in">
+                <i class="fas fa-code text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold">Desenvolvimento Web</h3>
                 <p>HTML5, CSS3, JavaScript, React, Node.js, GIT, GITHUB, Bootstrap, Atom, Wordpress</p>
             </div>
-            <div class="skill">
-                <i class="fas fa-database"></i>
-                <h3>Banco de Dados</h3>
+            <div class="skill bg-white p-6 shadow-lg rounded-lg text-center" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fas fa-database text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold">Banco de Dados</h3>
                 <p>SQL, MYQL, Phpmyadmin</p>
             </div>
-            <div class="skill">
-                <i class="fas fa-chart-line"></i>
-                <h3>Análise de Dados</h3>
+            <div class="skill bg-white p-6 shadow-lg rounded-lg text-center" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fas fa-chart-line text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold">Análise de Dados</h3>
                 <p>R, Excel, Power BI, Tableau, Power Query</p>
             </div>
         </div>
     </section>
 
-    <section id="education">
-        <h2>Escolaridade</h2>
-        <div class="education-slider owl-carousel">
-            <div class="education">
-                <div class="education-content">
-                    <h3>Universidade Óscar Ribas</h3>
-                    <p class="degree">Licenciado em Engenharia Informática e Comunicação</p>
-                    <p class="date">2017 - 2022/2023</p>
+    <section id="education" class="container mx-auto py-12 bg-white shadow-lg rounded-lg my-8 p-6">
+        <h2 class="text-2xl font-bold mb-4 border-b-2 border-blue-800 inline-block" data-aos="fade-right">Escolaridade</h2>
+        <div class="education-slider owl-carousel" data-aos="fade-right" data-aos-delay="100">
+            <div class="education p-6">
+                <div class="education-content bg-white p-6 shadow-lg rounded-lg text-center">
+                    <h3 class="text-xl font-semibold mb-2">Universidade Óscar Ribas</h3>
+                    <p class="degree text-gray-600 mb-2">Licenciado em Engenharia Informática e Comunicação</p>
+                    <p class="date text-gray-600">2017 - 2022/2023</p>
                 </div>
             </div>
-            <div class="education">
-                <div class="education-content">
-                    <h3>Colégio Pitruca</h3>
-                    <p class="degree">Ensino Médio Curso de Informática</p>
-                    <p class="date">2014 - 2016</p>
+            <div class="education p-6">
+                <div class="education-content bg-white p-6 shadow-lg rounded-lg text-center">
+                    <h3 class="text-xl font-semibold mb-2">Colégio Pitruca</h3>
+                    <p class="degree text-gray-600 mb-2">Ensino Médio Curso de Informática</p>
+                    <p class="date text-gray-600">2014 - 2016</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="languages">
-        <h2>Competências Linguísticas</h2>
-        <div class="languages-container">
-            <div class="language">
-                <div class="chart" data-percent="90">
-                    <span class="percent">C2</span>
-                    <svg width="120" height="120">
-                        <circle class="outer" cx="60" cy="60" r="54"></circle>
-                        <circle class="inner" cx="60" cy="60" r="54"></circle>
+    <section id="languages" class="container mx-auto py-12 bg-white shadow-lg rounded-lg my-8 p-6">
+        <h2 class="text-2xl font-bold mb-4 border-b-2 border-blue-800 inline-block" data-aos="fade-right">Competências Linguísticas</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="language bg-white p-6 shadow-lg rounded-lg text-center" data-aos="zoom-in">
+                <div class="chart relative mb-4" data-percent="90">
+                    <span class="percent text-4xl font-bold">C2</span>
+                    <svg width="120" height="120" class="mx-auto">
+                        <circle class="outer" cx="60" cy="60" r="54" stroke="#28A745" stroke-width="12" fill="none"></circle>
+                        <circle class="inner" cx="60" cy="60" r="54" stroke="#E0E0E0" stroke-width="12" fill="none"></circle>
                     </svg>
                 </div>
-                <h3>Português</h3>
+                <h3 class="text-xl font-semibold">Português</h3>
             </div>
-            <div class="language">
-                <div class="chart" data-percent="75">
-                    <span class="percent">A1</span>
-                    <svg width="120" height="120">
-                        <circle class="outer" cx="60" cy="60" r="54"></circle>
-                        <circle class="inner" cx="60" cy="60" r="54"></circle>
+            <div class="language bg-white p-6 shadow-lg rounded-lg text-center" data-aos="zoom-in" data-aos-delay="100">
+                <div class="chart relative mb-4" data-percent="75">
+                    <span class="percent text-4xl font-bold">A1</span>
+                    <svg width="120" height="120" class="mx-auto">
+                        <circle class="outer" cx="60" cy="60" r="54" stroke="#0077B5" stroke-width="12" fill="none"></circle>
+                        <circle class="inner" cx="60" cy="60" r="54" stroke="#E0E0E0" stroke-width="12" fill="none"></circle>
                     </svg>
                 </div>
-                <h3>Inglês</h3>
+                <h3 class="text-xl font-semibold">Inglês</h3>
             </div>
         </div>
+            </div>
     </section>
 
-    <section id="projects">
-        <h2>Projectos</h2>
-        <div class="project-slider owl-carousel">
-            <div class="project">
-                <img src="foto/0101.png" alt="Projeto 1">
-                <h3>Be Sporty</h3>
-                <p class="project-description">Be Sporty é um projeto com objetivo de vender materiais desportivo.</p>
-                <a id="read-more-button" href="https://dsw-developer.github.io/BE-SPORTY/">Read more</a>
+    <section id="projects" class="container mx-auto py-12 bg-white shadow-lg rounded-lg my-8 p-6">
+        <h2 class="text-2xl font-bold mb-4 border-b-2 border-blue-800 inline-block" data-aos="fade-right">Projetos</h2>
+        <div class="project-slider owl-carousel" data-aos="fade-right" data-aos-delay="100">
+            <div class="project p-6">
+                <img src="https://via.placeholder.com/300" alt="Projeto 1" class="mb-4 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold">Be Sporty</h3>
+                <p class="project-description text-gray-600">Be Sporty é um projeto com objetivo de vender materiais desportivos.</p>
+                <a href="https://dsw-developer.github.io/BE-SPORTY/" class="text-blue-800 hover:underline">Read more</a>
             </div>
-            <div class="project">
-                <img src="foto/of.png" alt="Projeto 2">
-                <h3>Livraria online</h3>
-                <p class="project-description">Livraria online para UOR,Projeto com objetivo de ajudar a universidade óscar ribas a distribuir livros.</p>
+            <div class="project p-6">
+                <img src="https://via.placeholder.com/300" alt="Projeto 2" class="mb-4 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold">Livraria online</h3>
+                <p class="project-description text-gray-600">Livraria online para UOR,Projeto com objetivo de ajudar a universidade óscar ribas a distribuir livros.</p>
+                <a href="#" class="text-blue-800 hover:underline">Read more</a>
             </div>
-            <div class="project">
-                <img src="foto/f10.png" alt="Projeto 3">
-                <h3>Pagamentos</h3>
-                <p class="project-description">Site de pagamento por transferência em Angola. As empresas do sector do e-commerce têm crescido exponencialmente.</p>
+            <div class="project p-6">
+                <img src="https://via.placeholder.com/300" alt="Projeto 3" class="mb-4 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold">Pagamentos</h3>
+                <p class="project-description text-gray-600">Site de pagamento por transferência em Angola.As empresas do sector do e-commerce têm crescido exponencialmente</p>
+                <a href="#" class="text-blue-800 hover:underline">Read more</a>
             </div>
         </div>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
         $(document).ready(function () {
-            $(".education-slider, .project-slider").owlCarousel({
+            $(".education-slider").owlCarousel({
                 items: 1,
                 loop: true,
                 margin: 20,
@@ -248,16 +157,22 @@
                 navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>']
             });
 
-            $('.chart').each(function() {
-                let percent = $(this).data('percent');
-                let circumference = 2 * Math.PI * 54;
-                let offset = circumference - (percent / 100 * circumference);
-                $(this).find('.outer').css('stroke-dashoffset', offset);
+            $(".project-slider").owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 20,
+                nav: true,
+                dots: false,
+                navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>']
             });
+
+            AOS.init();
         });
     </script>
 </body>
 </html>
+
+
 
     
     
